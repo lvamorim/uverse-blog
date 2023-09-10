@@ -9,7 +9,7 @@
 </p>
 
 <div align="center">
-  <img src="https://github.com/lvamorim/uverse-blog/assets/" alt="Uverse" width="500px">
+  <img src="https://github.com/lvamorim/uverse-blog/assets/118397791/fd95197e-49bf-4cd2-8825-dc4bf65b183a" alt="Uverse" width="500px">
 </div>
 
 <br>
@@ -29,7 +29,7 @@
 <br>
 
 ## Deploy
-> https://
+> https://uverse-blog.vercel.app/
 
 <br>
 
