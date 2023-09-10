@@ -1,0 +1,15 @@
+<div class="container">
+  <nav>
+    <ul>
+      <li *ngFor="let article of articles">
+        <app-article-card
+          [id]="article.id"
+          [cover]="article.cover"
+          [publishedDate]="article['published-date']"
+          [title]="article.title"
+          [content]="article.content"
+        ></app-article-card>
+      </li>
+    </ul>
+  </nav>
+</div>

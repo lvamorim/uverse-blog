@@ -1,0 +1,32 @@
+@use '../../../variables' as *
+
+.article
+  img.cover
+    height: 300px
+    object-fit: cover
+  
+  .container
+    margin-top: 0
+
+    span
+      display: block
+      text-align: right
+      line-height: 3
+
+    h2
+      line-height: 1.2
+      margin: 2rem 0
+
+    p
+      text-align: justify
+
+.not-found
+  .illustration
+    max-width: 300px
+  
+  p
+    font-size: $medium-font
+
+    &::after
+      content: ' — yet!'
+      color: $primary-color

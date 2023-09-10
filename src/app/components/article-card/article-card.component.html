@@ -1,0 +1,7 @@
+<article>
+  <img class="cover" loading="lazy" src="{{ cover || '../../../../../assets/uverse.svg' }}" alt="Article cover">
+  <span class="published-date">{{ publishedDate || 'Unknown date' }}</span>
+  <h2 class="title">{{ title || 'No title available' }}</h2>
+  <p class="content">{{ content || 'No content available.' }}</p>
+  <button class="outlined" (click)="openArticle(id)">Read more</button>
+</article>

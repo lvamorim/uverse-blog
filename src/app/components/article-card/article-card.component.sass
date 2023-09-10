@@ -1,0 +1,23 @@
+@use '../../../variables' as *
+
+img.cover
+  height: 200px
+  object-fit: cover
+
+.published-date
+  display: block
+  line-height: 1.5
+  font-size: $small-font
+  text-align: right
+
+.title
+  color: $primary-color
+  line-height: 1.2
+  margin: 1rem 0
+
+.content
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  overflow: hidden
+  margin-bottom: 1rem

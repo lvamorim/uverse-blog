@@ -1,0 +1,102 @@
+@use '../../../variables' as *
+
+$color: $primary-color
+
+header
+  background-color: $background-color
+  border-bottom: $divider
+  position: sticky
+  top: 0
+  z-index: 9999
+
+.container
+  $spacing: 1rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 2rem
+  margin: 0
+  padding-top: $spacing
+  padding-bottom: $spacing
+
+  .logo
+    display: flex
+    align-items: center
+    gap: 1rem
+
+    svg
+      $size: 3rem
+      width: $size
+      height: $size
+      fill: $color
+      stoke: $color
+
+      path, circle
+        color: $color
+    
+    h1
+      font-weight: 400
+
+  nav
+    flex-grow: .25
+
+    ul
+      display: flex
+      justify-content: space-between
+      gap: 1rem
+
+      a
+        color: inherit
+        padding: 1rem
+
+        &.active
+          color: $primary-color
+        
+        &:hover
+          color: $primary-color
+  
+  button
+    display: none
+
+@media screen and (max-width: 700px)
+  .container
+    position: relative
+  
+  nav
+    display: none
+
+    &.open
+      background-color: $background-color
+      border-bottom: $divider
+      display: initial
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      width: 100%
+
+      ul
+        flex-direction: column
+        gap: 0 !important
+        
+        a
+          display: block
+          padding: 1rem $container-spacing !important
+
+          &:hover
+            background-color: $primary-color
+            color: initial !important
+  
+  button
+    display: initial !important
+    padding: .25rem .75rem
+    width: fit-content
+
+    svg
+      $size: 2rem
+      display: block
+      width: $size
+      height: $size
+      
+      path
+        stroke: $color
